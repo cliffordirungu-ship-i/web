@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Bright Future Training Center and our student-focused approach to learning.">
+    <title>About Us | Bright Future Training Center</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root { --navy: #142b4a; --blue: #2878c7; --gold: #f5b942; --ink: #26364a; }
+        * { box-sizing: border-box; }
+        body { margin: 0; color: var(--ink); background: #f5f8fc; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; }
+        nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 30px; padding: 18px 24px; background: #fff; box-shadow: 0 3px 18px #142b4a12; }
+        nav a { color: var(--navy); font-size: .95rem; font-weight: 700; text-decoration: none; transition: color .2s; }
+        nav a:hover, nav a:focus { color: var(--blue); }
+        .hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 48px; max-width: 1120px; margin: 0 auto; padding: 76px 24px; }
+        .eyebrow { color: var(--blue); font-size: .8rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+        h1 { margin: 12px 0 18px; color: var(--navy); font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.08; }
+        .intro { max-width: 520px; color: #607087; font-size: 1.08rem; }
+        .hero img { display: block; width: 100%; min-height: 300px; max-height: 430px; object-fit: cover; border-radius: 22px; box-shadow: 0 18px 45px #142b4a25; }
+        .details { padding: 58px 24px 72px; background: #fff; text-align: center; }
+        .details h2 { margin: 0 0 12px; color: var(--navy); font-size: 2rem; }
+        .details > p { max-width: 690px; margin: 0 auto; color: #607087; }
+        .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1050px; margin: 34px auto 0; text-align: left; }
+        .card { padding: 25px; border: 1px solid #e8eef5; border-radius: 15px; background: #f9fbfe; }
+        .card .icon { font-size: 1.6rem; }
+        .card h3 { margin: 10px 0 6px; color: var(--navy); }
+        .card p { margin: 0; color: #607087; }
+        @media (max-width: 700px) { .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 48px; } .hero img { min-height: 240px; } .cards { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+        <a href="services.html">Services</a>
+    </nav>
+    <main>
+        <section class="hero">
+            <div>
+                <span class="eyebrow">About Bright Future</span>
+                <h1>Learning today.<br>Leading tomorrow.</h1>
+                <p class="intro">We help learners build practical skills and the confidence to reach their goals. At Bright Future Training Center, every lesson is a step toward new opportunities.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Students learning together in a bright classroom">
+        </section>
+        <section class="details">
+            <h2>A place to grow</h2>
+            <p>Our supportive instructors and welcoming learning environment make it easier to explore new ideas, practice real-world skills, and keep moving forward.</p>
+            <div class="cards">
+                <article class="card">
+                    <span class="icon" aria-hidden="true">🎯</span>
+                    <h3>Our mission</h3>
+                    <p>Make quality, practical learning accessible and help every student progress with confidence.</p>
+                </article>
+                <article class="card">
+                    <span class="icon" aria-hidden="true">🌱</span>
+                    <h3>Our approach</h3>
+                    <p>Learn by doing, with guidance and encouragement at every stage of your journey.</p>
+                </article>
+                <article class="card">
+                    <span class="icon" aria-hidden="true">✨</span>
+                    <h3>Our promise</h3>
+                    <p>Help you build lasting skills that open doors to a brighter future.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

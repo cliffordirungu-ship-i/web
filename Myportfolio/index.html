@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my portfolio!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">My Skills</a>
+        <a href="#projects">My Projects</a>
+        <a href="#contacts">Contacts</a>
+    </nav>
+
+    <main>
+        <section id="home" class="home">
+            <div class="home-copy">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+                <h2>Learning, creating, and solving with technology.</h2>
+                <p>Explore my studies in web design, programming, networking, computer repair, and software.</p>
+                <a class="button" href="#about">View About my profile</a>
+            </div>
+            <img class="course-profile" src="courses-profile.svg" alt="Illustrated learner profile with courses in web design, computer programming, computer networking, computer repair and maintenance, and computer software.">
+        </section>
+
+        <section id="about">
+            <div class="section-heading">
+                <h3>About Me</h3>
+                <p>I create clean, modern digital experiences and solve tech challenges with confidence.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <h4>Web Design</h4>
+                    <p>Creating visually appealing and user-friendly websites.</p>
+                </div>
+                <div class="about-card">
+                    <h4>Computer Programming</h4>
+                    <p>Building responsive web applications that deliver excellent user experiences.</p>
+                </div>
+                <div class="about-card">
+                    <h4>Computer Networking</h4>
+                    <p>Understanding network architectures and protocols for robust digital systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-heading">
+                <h3>My Skills</h3>
+                <p>These are the main areas where I focus my learning and development.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>Web Design</h4>
+                    <p>Designing stylish, responsive, and user-friendly interfaces.</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Computer Programming</h4>
+                    <p>Writing clean, efficient, and maintainable code for real-world applications.</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Computer Networking</h4>
+                    <p>Understanding system connectivity, protocols, and troubleshooting.</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Database Management</h4>
+                    <p>Designing and managing databases to support performance and data integrity.</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Computer Repair &amp; Maintenance</h4>
+                    <p>Diagnosing and fixing hardware and software issues to keep systems running smoothly.</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Computer Software</h4>
+                    <p>Developing and maintaining software applications for various platforms.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-heading">
+                <h3>My Projects</h3>
+                <p>Creative work focused on technology, design, problem-solving, and user value.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h4>Portfolio Website</h4>
+                    <p>A responsive personal portfolio designed to showcase skills and projects professionally.</p>
+                </div>
+                <div class="project-card">
+                    <h4>Learning Dashboard</h4>
+                    <p>A study and course interface that highlights progress, subjects, and learning goals.</p>
+                </div>
+                <div class="project-card">
+                    <h4>Network Setup Practice</h4>
+                    <p>Hands-on projects focused on communication systems and troubleshooting.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div class="section-heading">
+                <h3>Contact Me</h3>
+                <p>I am open to collaboration, learning opportunities, and new projects.</p>
+            </div>
+            <div class="contact-card">
+                <h4>Let's connect</h4>
+                <p>Email: cliffordirungu@gmail.com</p>
+                <p>Location: Nairobi, Kenya</p>
+                <div class="contact-links">
+                    <a href="mailto:cliffordirungu@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <style>
+        :root {
+            --primary: #5b4ae8;
+            --primary-dark: #3d2ee0;
+            --secondary: #ff7b5c;
+            --bg: #f3f7ff;
+            --white: #ffffff;
+            --text: #1f2937;
+            --muted: #5f6b7a;
+            --shadow: 0 18px 40px rgba(41, 58, 89, 0.12);
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #edf4ff 0%, #f9fbff 100%);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a { text-decoration: none; }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 1rem 2.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem;
+            font-size: clamp(2.4rem, 5vw, 4rem);
+            letter-spacing: 0.05em;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 8px 18px rgba(20, 25, 38, 0.08);
+        }
+
+        nav a {
+            color: var(--text);
+            font-weight: 700;
+            padding: 0.75rem 1rem;
+            border-radius: 999px;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem 4rem;
+        }
+
+        .home {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: 2rem;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(91, 74, 232, 0.08);
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .eyebrow {
+            margin: 0 0 1rem;
+            color: var(--primary);
+            letter-spacing: 0.12em;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .home-copy h2 {
+            margin: 0 0 1rem;
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            line-height: 1.15;
+        }
+
+        .home-copy p {
+            margin: 0 0 1.5rem;
+            color: var(--muted);
+            font-size: 1.08rem;
+        }
+
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--secondary), #ff9d76);
+            color: var(--white);
+            padding: 0.9rem 1.5rem;
+            border-radius: 999px;
+            font-weight: bold;
+            box-shadow: 0 12px 24px rgba(255, 123, 92, 0.25);
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 30px rgba(255, 123, 92, 0.32);
+        }
+
+        .course-profile {
+            width: 100%;
+            max-width: 460px;
+            justify-self: center;
+            display: block;
+        }
+
+        section {
+            margin-top: 3rem;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-heading h3 {
+            margin: 0 0 0.5rem;
+            font-size: clamp(1.8rem, 3vw, 2.8rem);
+        }
+
+        .section-heading p {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        .skills-grid,
+        .projects-grid,
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .about-card,
+        .skill-card,
+        .project-card,
+        .contact-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(91, 74, 232, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-card:hover,
+        .skill-card:hover,
+        .project-card:hover,
+        .contact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 24px 42px rgba(41, 58, 89, 0.16);
+        }
+
+        .about-card h4,
+        .skill-card h4,
+        .project-card h4,
+        .contact-card h4 {
+            margin: 0 0 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .about-card p,
+        .skill-card p,
+        .project-card p,
+        .contact-card p {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            background: #eef2ff;
+            color: var(--primary-dark);
+            border-radius: 999px;
+            padding: 0.7rem 1rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 760px) {
+            .home {
+                grid-template-columns: 1fr;
+                padding: 1.25rem;
+            }
+
+            nav {
+                justify-content: flex-start;
+            }
+
+            nav a {
+                flex: 1 1 42%;
+                text-align: center;
+            }
+        }
+    </style>
+</body>
+</html>

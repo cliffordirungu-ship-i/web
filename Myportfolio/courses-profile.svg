@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="720" viewBox="0 0 1100 720" role="img" aria-labelledby="title description">
+  <title id="title">My computing courses</title>
+  <desc id="description">A friendly illustrated learner with a laptop alongside a list of five computing courses.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f8ff"/>
+      <stop offset="1" stop-color="#e4f4f3"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#475fe6"/>
+      <stop offset="1" stop-color="#2937a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1100" height="720" rx="38" fill="url(#background)"/>
+  <circle cx="185" cy="170" r="118" fill="#d9e3ff"/>
+  <circle cx="404" cy="510" r="94" fill="#bce9df"/>
+  <circle cx="424" cy="154" r="14" fill="#f3b84b"/>
+  <circle cx="71" cy="431" r="10" fill="#f3b84b"/>
+  <rect x="40" y="52" width="385" height="616" rx="28" fill="#fff" opacity=".8"/>
+  <text x="74" y="101" fill="#4856bd" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="2">MY TECH JOURNEY</text>
+  <circle cx="232" cy="258" r="104" fill="#f4c7a6"/>
+  <path d="M129 254c0-76 40-122 104-122 66 0 105 48 105 122v17c-15-9-24-21-32-37-35 22-97 32-177 24z" fill="#26324d"/>
+  <path d="M190 278c10 8 21 12 33 12s23-4 33-12" fill="none" stroke="#a9574f" stroke-linecap="round" stroke-width="6"/>
+  <circle cx="197" cy="244" r="5" fill="#26324d"/>
+  <circle cx="258" cy="244" r="5" fill="#26324d"/>
+  <path d="M110 490c9-91 51-139 122-139 72 0 114 48 123 139v16H110z" fill="url(#shirt)"/>
+  <path d="M201 354l31 47 31-47" fill="#fff"/>
+  <path d="M225 400h15l14 94h-43z" fill="#f3b84b"/>
+  <rect x="95" y="493" width="273" height="112" rx="13" fill="#27324c"/>
+  <rect x="107" y="505" width="249" height="83" rx="7" fill="#d9ecf4"/>
+  <path d="M82 606h299l-18 17H100z" fill="#465371"/>
+  <rect x="206" y="609" width="52" height="5" rx="2.5" fill="#a9b5d1"/>
+  <rect x="475" y="52" width="585" height="616" rx="28" fill="#fff"/>
+  <text x="520" y="119" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="2">WHAT I'M LEARNING</text>
+  <text x="520" y="169" fill="#202b45" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="700">My Courses</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="514" y="206" width="507" height="72" rx="16" fill="#f4f6ff"/>
+    <circle cx="553" cy="242" r="16" fill="#e1e6ff"/>
+    <path d="M546 248v-12h14v12m-17 3h20" fill="none" stroke="#475fe6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <text x="584" y="249" fill="#25304a" font-size="21" font-weight="600">Web Design</text>
+    <rect x="514" y="292" width="507" height="72" rx="16" fill="#f1faf7"/>
+    <circle cx="553" cy="328" r="16" fill="#d9f1e9"/>
+    <path d="m548 322-5 6 5 6m10-12 5 6-5 6m-4-15-4 18" fill="none" stroke="#24866c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <text x="584" y="335" fill="#25304a" font-size="21" font-weight="600">Computer Programming</text>
+    <rect x="514" y="378" width="507" height="72" rx="16" fill="#fff8eb"/>
+    <circle cx="553" cy="414" r="16" fill="#ffedc9"/>
+    <circle cx="553" cy="414" r="3" fill="#bc7a14"/>
+    <circle cx="545" cy="407" r="2" fill="#bc7a14"/>
+    <circle cx="561" cy="407" r="2" fill="#bc7a14"/>
+    <circle cx="545" cy="421" r="2" fill="#bc7a14"/>
+    <circle cx="561" cy="421" r="2" fill="#bc7a14"/>
+    <text x="584" y="421" fill="#25304a" font-size="21" font-weight="600">Computer Networking</text>
+    <rect x="514" y="464" width="507" height="72" rx="16" fill="#fff2f1"/>
+    <circle cx="553" cy="500" r="16" fill="#ffe1df"/>
+    <path d="M545 494h16v12h-16zm4 15h8" fill="none" stroke="#c6534d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <text x="584" y="507" fill="#25304a" font-size="19" font-weight="600">Computer Repair &amp; Maintenance</text>
+    <rect x="514" y="550" width="507" height="72" rx="16" fill="#f4f6ff"/>
+    <circle cx="553" cy="586" r="16" fill="#e1e6ff"/>
+    <rect x="545" y="578" width="16" height="16" rx="3" fill="none" stroke="#475fe6" stroke-width="2.5"/>
+    <path d="M549 582h8m-8 4h8m-8 4h5" stroke="#475fe6" stroke-linecap="round" stroke-width="2"/>
+    <text x="584" y="593" fill="#25304a" font-size="21" font-weight="600">Computer Software</text>
+  </g>
+</svg>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Build practical skills for a brighter future at Bright Future Training Center.">
+    <title>Bright Future Training Center</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            color-scheme: light;
+            --ink: #17243b;
+            --muted: #5b687d;
+            --blue: #1769aa;
+            --blue-dark: #10558e;
+            --surface: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            color: var(--ink);
+            font-family: "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f0f7ff 0%, #fffaf3 100%);
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.94);
+            border-bottom: 1px solid #e8edf4;
+        }
+
+        nav {
+            max-width: 1160px;
+            min-height: 76px;
+            margin: 0 auto;
+            padding: 0 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        nav > a {
+            color: var(--ink);
+            font-size: 1.2rem;
+            font-weight: 750;
+            letter-spacing: -0.03em;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li a {
+            color: #43516a;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 160ms ease;
+        }
+
+        nav li a:hover,
+        nav li a:focus-visible {
+            color: var(--blue);
+        }
+
+        main {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 48px 28px 72px;
+        }
+
+        .hero img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 320px;
+            object-fit: cover;
+            border-radius: 0 20px 20px 0;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            align-items: stretch;
+            overflow: hidden;
+            min-height: 430px;
+            background: var(--surface);
+            border: 1px solid #e7edf5;
+            border-radius: 20px;
+            box-shadow: 0 18px 48px rgba(35, 65, 103, 0.10);
+        }
+
+        .hero-content {
+            align-self: center;
+            padding: 54px 42px;
+        }
+
+        .eyebrow {
+            margin: 0 0 14px;
+            color: var(--blue);
+            font-size: 0.8rem;
+            font-weight: 750;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            max-width: 480px;
+            margin: 0;
+            font-size: clamp(2.4rem, 5vw, 3.8rem);
+            line-height: 1.08;
+            letter-spacing: -0.055em;
+        }
+
+        .hero-content > p:not(.eyebrow) {
+            max-width: 430px;
+            margin: 20px 0 28px;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 21px;
+            color: #fff;
+            background: var(--blue);
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 160ms ease, transform 160ms ease;
+        }
+
+        .button:hover,
+        .button:focus-visible {
+            background: var(--blue-dark);
+            transform: translateY(-2px);
+        }
+
+        .why-choose-us {
+            max-width: 700px;
+            margin: 54px auto 0;
+            text-align: center;
+        }
+
+        .why-choose-us h2 {
+            margin: 0 0 10px;
+            font-size: clamp(1.7rem, 3vw, 2.2rem);
+            letter-spacing: -0.035em;
+        }
+
+        .why-choose-us p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        footer {
+            padding: 22px 28px;
+            color: #657187;
+            background: rgba(255, 255, 255, 0.72);
+            border-top: 1px solid #e8edf4;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 760px) {
+            nav {
+                min-height: auto;
+                padding: 18px 22px;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 8px 20px;
+            }
+
+            main {
+                padding: 30px 20px 52px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content {
+                padding: 38px 28px;
+            }
+
+            .hero img {
+                height: 280px;
+                min-height: 0;
+                border-radius: 0;
+            }
+
+            .why-choose-us {
+                margin-top: 40px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                scroll-behavior: auto !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html" aria-label="Bright Future Training Center home">Bright Future</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about%20us.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact%20us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <noscript>
+        <div style="background:#e0e0e0;color:#333;padding:1em;text-align:center;">
+            Image could not be displayed. Please enable JavaScript or check your connection.
+        </div>
+    </noscript>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Learn today. Lead tomorrow.</p>
+                <h1>Build skills for a brighter future</h1>
+                <p>Explore practical training in technology and beyond, and take the next step toward your goals.</p>
+                <a class="button" href="courses.html">View our courses</a>
+            </div>
+            <img
+                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+                alt="Students celebrating their graduation"
+                width="1200"
+                height="800"
+            >
+        </section>
+
+        <section class="why-choose-us">
+            <h2>Why choose us?</h2>
+            <p>We combine supportive instruction with practical skills to help you prepare for the opportunities ahead.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Bright Future Training Center</p>
+    </footer>
+</body>
+</html>
